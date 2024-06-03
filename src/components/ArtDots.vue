@@ -82,7 +82,7 @@ function restart() {
 onMounted(() => {
   restart()
 
-  useEventListener('resize', () => {
+  addEventListener('resize', () => {
     w = window.innerWidth
     h = window.innerHeight
     resizeCanvas(w, h)
